@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>todos for the week</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-text"><i class="fas fa-check-square"></i> todos for the week</h1>
+        <p>Click on todo once to check off and twice to delete</p>
+        <div class="week-container">
+            <div class="day-container">
+                <h2 class="day-title">Monday</h2>
+                <form class="form">
+                    <input type="text" id="in-mon" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todosmon"></ul>
+                </form>
+            </div>
+            <div class="day-container">
+                <h2 class="day-title">Tuesday</h2>
+                <form class="form">
+                    <input type="text" id="in-tue" class="todoinput" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todostue"></ul>
+                </form>
+            </div>
+            <div class="day-container">
+                <h2 class="day-title">Wednesday</h2>
+                <form class="form">
+                    <input type="text" id="in-wed" class="todoinput" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todoswed"></ul>
+                </form>
+            </div>
+            <div class="day-container">
+                <h2 class="day-title">Thursday</h2>
+                <form class="form">
+                    <input type="text" id="in-thu" class="todoinput" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todosthu"></ul>
+                </form>
+            </div>
+            <div class="day-container">
+                <h2 class="day-title">Friday</h2>
+                <form class="form">
+                    <input type="text" id="in-fri" class="todoinput" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todosfri"></ul>
+                </form>
+            </div>
+            <div class="day-container">
+                <h2 class="day-title">Saturday</h2>
+                <form class="form">
+                    <input type="text" id="in-sat" class="todoinput" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todossat"></ul>
+                </form>
+            </div>
+            <div class="day-container">
+                <h2 class="day-title">Sunday</h2>
+                <form class="form">
+                    <input type="text" id="in-sun" class="todoinput" placeholder="Enter your todo here...">
+                    <ul class="todoslist" id="todossun"></ul>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
