@@ -1,16 +1,60 @@
-//enter to add todo
+//TODO LIST
+
+const input = document.getElementById('input')
+const todoslist = document.getElementsByClassName('todoslist')
+const btn = document.getElementById('btnNewTodo')
+//enter to add todo if input not empty
+btn.addEventListener('click', newTodo)
+
+
+const todoArray = JSON.parse(localStorage.getItem('todoArray'))
+
+if(todoArray){
+    todoArray.array.forEach(e => {
+        newTodo(TODOEL)
+    });
+}
+
+
+function newTodo(){
+    if(input.value !== ''){
+        //save todo
+        inputVal = input.value
+        //create element todo
+        const todo = document.createElement('li')
+        todo.classList.add('todoslist li')
+        todo.innerHTML = inputVal
+        console.log(todo)
+        //append element do list
+        todoslist.appendChild(todo)
+        updateLS()
+    }
+
+}
+
+function updateLS(){
+    const allTodosNodeList = document.querySelectorAll('.todolist li')
+
+    const todoArray = []
+
+    allTodosNodeList.forEach(TODOEL =>
+        todoArray.push(TODOEL.value))
+
+    localStorage.setItem('Saved todos', JSON.stringify(todoArray))
+}
+
+
 //click on top of todo to check 
 //click on top of todo twice to delete 
 
-const form = document.querySelectorAll('.form')
-const inMon = document.getElementById('in-mon')
-const ulmon = document.getElementById('todosmon')
-if(inMon.text !==""){
-    ulmon.innerHTML = `<li>`+inMon.text+`</li>`
-     //mudar para adicionar um elemento na lista
-}else{
-    window.alert('Write a new todo and press enter do add')
-}
+// const form = document.querySelectorAll('.form')
+
+// if(inMon.text !==""){
+//     ulmon.innerHTML = `<li>`+inMon.text+`</li>`
+//      //mudar para adicionar um elemento na lista
+// }else{
+//     window.alert('Write a new todo and press enter do add')
+// }
 
 
 
